@@ -80,5 +80,16 @@ $(document).ready(function(){
 			}
 		});
 	});
-	
+	$("#wijzigen").click(function() {
+		var uri = "restservices/user/update/" + wijzig;
+		$.ajax(uri, {
+			method: "post",
+			succes: function(response) {
+				console.log("Gelukt");
+			},
+			error: function(response) {
+				alert("Er is iets fout gegaan!");
+			}
+		})
+	})
 });

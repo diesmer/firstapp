@@ -15,7 +15,7 @@ $(document).ready(function() {
 		window.location.assign("http://localhost:8081/firstapp/Klant_inzien.html");
 	});
 	$("#kwijzigen").click(function() {
-		window.location.assign("");
+		window.location.assign("http://localhost:8081/firstapp/Klant_wijzigen.html");
 	});
 	$("#kverwijderen").click(function(){
 		window.location.assign("http://localhost:8081/firstapp/Klant_verwijderen.html");
